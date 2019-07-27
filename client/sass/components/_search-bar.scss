@@ -1,0 +1,32 @@
+.search-bar {
+    border-radius: 5px;
+    position: relative;
+    margin-top: -5px;
+    z-index: 55;
+
+    &--description {
+        background-color: $color-primary;
+        color: $color-white;
+        text-align: right;
+        padding: 2.8rem 5rem 2.8rem 0;
+        font-weight: bold;
+        text-transform: capitalize;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    } 
+
+    &--input {
+        width: 100%;
+        border: none;
+        height: 100%;
+        background-image: url(/img/location-marker.svg);
+        background-position: 3rem 2.9rem;
+        background-repeat: no-repeat;
+        padding-left: 10rem;
+        padding-right: 5rem;
+        font-size: $default-font-size;
+        font-weight: bold; 
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
