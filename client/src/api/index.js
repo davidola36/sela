@@ -1,6 +1,6 @@
 import Axios from 'axios';
 // const baseURL = "http://Localhost:3030";
-const baseURL = "https://sela-assessment.herokuapp.com/"
+const baseURL = "https://sela-assessment.herokuapp.com"
 
 
 const axios = Axios.create({
