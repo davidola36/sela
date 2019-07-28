@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
- 
+ // name
+// description
+// location
+// progress
+// status
+// budget
 const Project = new Schema({
   name: {
     type: String,
