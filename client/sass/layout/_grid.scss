@@ -1,7 +1,16 @@
 .row {
     width: $grid-width;
     // background-color: #eee;
+    // display: flex;
+    // flex-wrap: wrap;
     margin: 0 auto;
+    @include respond-phone {
+        width: 95%;
+    }
+
+    @include respond-tablet {
+        width: 95%
+    }
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -12,14 +21,17 @@
     [class^="col-"] {
         // background-color: orangered;
         float: left;
-
-        &:not(:last-child) {
+        &:not(:nth-child(even)) {
             margin-right: $gutter-horizontal;
         }
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal})/2);
+        @include respond-phone {
+            width: 100%;
+            margin-bottom: $gutter-vertical
+        }
     }
 
     .col-1-of-3 {

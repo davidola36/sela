@@ -9,17 +9,30 @@ body {
 .heading-primary {
     color: $color-white;
     backface-visibility: hidden;
-    margin-bottom: 2.5rem;
+    width: 55%;
+    text-align: center;
+    @include respond-phone {
+        width: 85%;
+    }
+
+    @include respond-tablet {
+        width: 85%;
+    }
+    
 
     &--main {
-        display: block;
+        display: inline-block;
         font-size: 5rem;
         font-weight: 400;
-        // letter-spacing: 3.5rem;
         animation-name: moveInLeft;
         line-height: 5.4rem;
         animation-duration: 1s;
+        margin-bottom: 2.5rem;
         animation-timing-function: ease-out;
+        width: 90%;
+        @include respond-phone {
+            font-size: 28px;
+        }
     }
 
     &--sub {
@@ -38,12 +51,20 @@ body {
     display: inline-block;
     color: $color-black;
     margin-bottom: 5px;
+    @include respond-phone {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .heading-tertiary {
     font-size: 1.4rem;
     font-weight: normal;
     margin-bottom: 5px;
+    @include respond-phone {
+        font-size: 10px;
+        line-height: 16px;
+    }
 }
 
 .paragraph {

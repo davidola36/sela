@@ -4,9 +4,15 @@
 
     .flex-1-of-3 {
         width: 33.3%;
+        @include respond-phone {
+            width: 40%;
+        }
     }
 
     .flex-2-of-3 {
         width: 66.7%;
+        @include respond-phone {
+            width: 60%;
+        }
     }
 }
