@@ -41,7 +41,7 @@ const project = (props) => {
             <div className="project-image--cont">
                 <div className="project-image--status" style={{backgroundColor:statusColor}}>{statusText}</div>
                 <img src={'/images/' + props.project.image_url} className="project-image" />
-                <div className="project-image--progress"><span className="project-image--progressInnerSpan">{props.project.progress}% complete</span><div className="project-image--progressInner" style={{width:props.project.progress + 'px'}}> </div></div>
+                <div className="project-image--progress"><span className="project-image--progressInnerSpan">{props.project.progress}% complete</span><div className="project-image--progressInner" style={{width:props.project.progress + '%'}}> </div></div>
             </div>
             <div className="project-content--cont">
                 <h3 className="heading-secondary">{props.project.name}</h3>

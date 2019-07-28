@@ -45,7 +45,9 @@ router.post('/project', upload.single('image'), (req, res, next) => {
         budget: body.budget
     }
     Projects.create(bodyObj, function(err, Contestant){
-        if(err) res.send(err);
+        if(err) {
+            console.log(err) 
+            return res.send(err);}
             res.send(Contestant);
     });
 })
